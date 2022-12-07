@@ -1,0 +1,12 @@
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{ 
+    background-image: url(LivingBooks.png);
+    background-size: 1437px;
+}
+
+div > nav{
+    color: blue ;
+}
