@@ -1,0 +1,26 @@
+
+
+.card{
+    padding: 60px;
+    border: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    ;
+    
+}
+.nav-link{
+    color: white;
+}
+.card-img-top{
+    
+    height: 400px;
+    width: 300px;
+}
+body{
+    background-color: #19192a;
+
+}
+.card-group{
+    padding-top: 40px;
+    border: 30px;
+}

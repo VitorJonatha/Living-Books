@@ -3,10 +3,9 @@ h1{
 }
 
 body{ 
-    background-image: url(LivingBooks.png);
+    background-image: url(/HTML/imagens/LivingBooks.png);
     background-size: 1437px;
 }
-
-div > nav{
-    color: blue ;
+#Login{
+    padding: 5px;
 }
