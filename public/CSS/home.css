@@ -3,13 +3,10 @@ h1{
 }
 
 body{ 
-    background-image: url(/HTML/imagens/LivingBooks.png);
+    background-image: url(/public/imagens/LivingBooks.png);
     background-size: 1437px;
 }
 #Login{
     padding: 5px;
 }
 
-.nav{
-    color: white;
-}
