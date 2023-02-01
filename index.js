@@ -23,6 +23,9 @@ app.get ('/terror', function(req, res){
     res.sendFile(__dirname + '/public/HTML/terror.html');
 });
 
+app.get ('/romance', function(req, res){
+    res.sendFile(__dirname + '/public/HTML/romance.html');
+});
 
 app.listen (8080,function(){
     console.log ('Servidor rodando na porta http://localhost:8080/fantasia');
