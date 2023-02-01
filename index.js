@@ -25,5 +25,5 @@ app.get ('/terror', function(req, res){
 
 
 app.listen (8080,function(){
-    console.log ('Servidor rodando na porta http://localhost:8080/acao');
+    console.log ('Servidor rodando na porta http://localhost:8080/fantasia');
 });
