@@ -12,4 +12,11 @@ body{
 
 .nav-link{
     color: white;
+    font-size: 19px;
 }
+h1{
+    font-family: serif;
+    color: rgb(199, 201, 210);
+    font-size: 70px;
+}
+
