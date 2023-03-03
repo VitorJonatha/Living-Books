@@ -5,8 +5,17 @@
     margin-left: 60px;
     margin-right: 60px;
     height: 763px;
-    
+    transition: 0.3s;
+    border-radius: 15px;
+    background-color: aliceblue;
 }
+.card:hover{
+    margin-top: -10px;
+    background-color: rgb(170, 215, 255);
+    color: black
+}
+
+
 .nav-link{
     color: white;
     font-size: 19px;
