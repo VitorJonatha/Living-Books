@@ -32,32 +32,26 @@
     text-align: center;
     box-shadow: rgba(20, 70, 32, 0.13) 0 1px 0 inset;
     box-shadow: 3px 3px #527958;
-  }
+}
 .button-3:active{
     background-color: #4f8b4d;
     box-shadow: none;
 }
-
-
-
 .nav-link{
     color: white;
     font-size: 17px;
 }
 .card-img-top{
-    
     height: 400px;
     width: 300px;
 }
 body{
     background-color: #19192a;
 }
-
 .card-group{
     padding-top: 40px;
     border: 30px;
 }
-button{
-    height: 40px;
-    color: green;
+.card-text{
+    margin-bottom: 1em;
 }
