@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/views/CSS/LivrosDaComunidade.css">
+    <style>
+        #area {
+            position: relative;
+            left: 37%;
+            top: 29%;
+            width: 320px;
+            height: 270px;
+        }
+    
+        #area #formulario {
+            position: absolute;
+            display: block;
+        }
+    
+        textarea {
+            width: 300px;
+            height: 250px;
+        }
+    
+        input {
+            width: 300px;
+            height: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Voltar ao inicio</a>
+                    </li>
+
+                </ul>
+                <h2 class="sub" >Logo</h2>
+                <img src="/views/imagens/steak night (1).png" width="150px" height="60px"> 
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Deixe aqui seu comentário</h1>
+    <p> A sua opinião é muito importante para nós</p>
+    <div id="comentar"><a href="/form">Comentar</a></div>
+    
+    {{#each comments}}
+    <h3>{{titulo}}</h1>
+        <h4>{{conteudo}}</p>
+            <small>{{createdAt}}</small>
+            <a href="/deletar/{{id}}"><button onclick="myFunction">Deletar</button></a>
+            <hr>
+            </div>
+            <script>
+                function myFunction() {
+                    alert("Comentario excluido");
+                }
+            </script>
+            {{/each}}
+
+    <div id="area">
+        <form action="/add" method="POST" id="formulario">
+            <p>Titulo:</p>
+            <input id="titulo" type="text" name="titulo">
+            <p>Conteúdo:</p>
+            <textarea name="conteudo"></textarea>
+            <div>
+                <button id="comentar" type="submit">Cadastrar Comentário</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
