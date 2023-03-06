@@ -10,7 +10,7 @@
 }
 .card:hover{
     margin-top: -10px;
-    background-color: rgb(170, 215, 255);
+    background-color:  rgb(201, 56, 56);
     color: black
 }
 .button-3 {
@@ -56,4 +56,11 @@ body{
 button{
     height: 40px;
     color: green;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 50px;
+    padding: 20px;
 }
