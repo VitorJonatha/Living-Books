@@ -11,7 +11,18 @@
 
     <link rel="stylesheet" href="/views/CSS/LivrosDaComunidade.css">
     <style>
+        body{
+            background-color:  #19192a;
+        }
+        .nav-link{
+             color: white;
+            font-size: 17px;
+}
+        #area input,textarea{
+            background-color: rgb(126, 109, 219);
+        }
         #area {
+            font-size: 15px;
             position: relative;
             left: 37%;
             top: 29%;
@@ -33,6 +44,14 @@
             width: 300px;
             height: 30px;
         }
+
+        button{
+            color: black;
+        }
+
+        main{
+            font-size: 15px;
+        }
     </style>
 
 </head>
@@ -40,15 +59,36 @@
 <body>
 
     <nav class="navbar navbar-expand-lg bg-dark">
+
         <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
+                    </li>                 
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/views/HTML/sugestoes.html">Sugestões</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html">Voltar ao inicio</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Categorias</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/views/HTML/acao.html">Ação</a></li>
+                            <li><a class="dropdown-item" href="/views/HTML/fantasia.html">Fantasia</a></li>
+                            <li><a class="dropdown-item" href="/views/HTML/terror.html">Terror</a></li>
+                            <li><a class="dropdown-item" href="/views/HTML/romance.html">Romance</a></li>
+                            <li><a class="dropdown-item" href="/views/HTML/misterio.html">Mistério</a></li>
+
+                        </ul>
                     </li>
 
                 </ul>
@@ -59,8 +99,10 @@
         </div>
     </nav>
 
-    <h1>Divulgue seu livro!</h1>
-    <p> Deixe aqui as informações do seu livro</p>
+    <main>
+        <h1>Divulgue seu livro!</h1>
+        <p> Deixe aqui as informações do seu livro</p>
+    </main>
     
     
     {{#each comments}}
@@ -85,7 +127,7 @@
             <textarea name="descricao"></textarea>
              <p>Link:</p>
             <input id="link" type="text" name="link">
-            <div> <br>
+            <div class="divulgar"> <br>
                 <button id="comentar" type="submit">Divulgar</button>
             </div>
         </form>
