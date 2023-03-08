@@ -15,4 +15,4 @@ const Comunidade = db.sequelize.define('comunidade',{
 })
 module.exports = Comunidade
 
-Comunidade.sync({force: true})
+//Comunidade.sync({force: true})

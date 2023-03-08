@@ -1,36 +1,46 @@
+const express = require('express');
+const app = express();
+const handlebars = require('express-handlebars')
+const bodyParser = require('body-parser')
+const Comunidade = require('./models/comunidade')
 
-var express = require ('express');
-var app = express ();
-
-
-
-app.use(express.static(__dirname + '/public'));
-
-
-app.get ('/home', function(req, res){
-    res.sendFile(__dirname + '/public/HTML/home.html');
-});
-
-app.get ('/acao', function(req, res){
-    res.sendFile(__dirname + '/public/HTML/acao.html');
-});
-
-app.get ('/fantasia', function(req, res){
-    res.sendFile(__dirname + '/public/HTML/fantasia.html');
-});
-
-app.get ('/terror', function(req, res){
-    res.sendFile(__dirname + '/public/HTML/terror.html');
-});
-
-app.get ('/romance', function(req, res){
-    res.sendFile(__dirname + '/public/HTML/romance.html');
-});
-
-app.get ('/misterio', function(req, res){
-    res.sendFile(__dirname + '/public/HTML/misterio.html');
-});
-
-app.listen (8080,function(){
-    console.log ('Servidor rodando na porta http://localhost:8080/fantasia');
+//Config
+//Template Engine
+app.engine('handlebars',handlebars.engine({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+//Body Parser
+app.use(bodyParser.urlencoded({ extended: false}))
+app.use(bodyParser.json())
+//Rotas Inicial
+app.get('/',function(req,res){
+    Comunidade.findAll({order: [['id','DESC']]}).then(function(comunidade){
+        res.render('LivrosDaComunidade', { comunidade: comunidade })
+    })
+})
+//Rota do formulário
+app.get('/form',function (req,res) {
+    res.render('formulario.handlebars')
+})
+//rotas "post" só pode ser acessada quando alguem faz uma requisição
+app.post('/add',function(req,res){
+    Comunidade.create({
+        titulo: req.body.titulo,
+        conteudo: req.body.conteudo 
+        }).then(function(){
+            res.redirect('/')
+    }).catch(function(erro){
+        res.send("Comentário não pode ser criado" + erro)
+    })
+})
+//Rota para deletar Comentários
+app.get('/deletar/:id',function(req,res){
+    Comunidade.destroy({where:{'id':req.params.id}}).then(function(){
+        res.redirect('/')
+    }).catch(function(erro){
+        res.send('Ocorreu um erro')
+    })
+})
+    
+app.listen(8081, function () {
+    console.log("Servidor rodando na porta http://localhost:8081/");
 });
