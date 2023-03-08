@@ -59,9 +59,9 @@
         </div>
     </nav>
 
-    <h1>Deixe aqui seu comentário</h1>
-    <p> A sua opinião é muito importante para nós</p>
-    <div id="comentar"><a href="/form">Comentar</a></div>
+    <h1>Divulgue seu livro!</h1>
+    <p> Deixe aqui as informações do seu livro</p>
+    
     
     {{#each comments}}
     <h3>{{titulo}}</h1>
@@ -81,10 +81,12 @@
         <form action="/add" method="POST" id="formulario">
             <p>Titulo:</p>
             <input id="titulo" type="text" name="titulo">
-            <p>Conteúdo:</p>
-            <textarea name="conteudo"></textarea>
-            <div>
-                <button id="comentar" type="submit">Cadastrar Comentário</button>
+            <p>Descrição:</p>
+            <textarea name="descricao"></textarea>
+             <p>Link:</p>
+            <input id="link" type="text" name="link">
+            <div> <br>
+                <button id="comentar" type="submit">Divulgar</button>
             </div>
         </form>
     </div>
