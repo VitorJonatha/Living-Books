@@ -1,8 +1,7 @@
         /* Responsivo início */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 360px) {
     *{
         margin: none;
-
     }
     .body {
       margin: none;
