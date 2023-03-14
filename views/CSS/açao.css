@@ -1,4 +1,10 @@
-       /* h1 início*/ 
+
+
+.nav-link{
+    color: white;
+    font-size: 17px;
+}
+    /* h1 início*/ 
 h1{
     text-align: center;
     color: white;
@@ -47,10 +53,7 @@ h1{
     background-color: #4f8b4d;
     box-shadow: none;
 }
-.nav-link{
-    color: white;
-    font-size: 17px;
-}
+
 .card-img-top{
     height: 400px;
     width: 300px;
