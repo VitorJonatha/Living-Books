@@ -1,4 +1,9 @@
+    /* Responsivo início */
+ @media screen and (min-width: 360px) {
 
+}
+        
+                /* Responsivo fim */
 
 .nav-link{
     color: white;
