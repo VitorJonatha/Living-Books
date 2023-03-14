@@ -20,6 +20,7 @@
 }
         #area input,textarea{
             background-color: rgb(126, 109, 219);
+            border-radius: 10px;
         }
         #area {
             font-size: 15px;
@@ -46,7 +47,9 @@
         }
 
         button{
-            color: black;
+            color: rgb(241, 237, 237);
+            border-radius: 10px;
+            font-family: cursive;
         }
 
         main{
@@ -105,9 +108,10 @@
     </main>
     
     
-    {{#each comments}}
+    {{#each comunidade}}
     <h3>{{titulo}}</h1>
-        <h4>{{conteudo}}</p>
+        <h4>{{descricao}}</p>
+            <h3>{{link}}</h3>
             <small>{{createdAt}}</small>
             <a href="/deletar/{{id}}"><button onclick="myFunction">Deletar</button></a>
             <hr>
@@ -123,7 +127,7 @@
         <form action="/add" method="POST" id="formulario">
             <p>Titulo:</p>
             <input id="titulo" type="text" name="titulo">
-            <p>Descrição:</p>
+            <p>Descrição/sinopse:</p>
             <textarea name="descricao"></textarea>
              <p>Link:</p>
             <input id="link" type="text" name="link">

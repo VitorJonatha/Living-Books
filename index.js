@@ -19,13 +19,14 @@ app.get('/',function(req,res){
 })
 //Rota do formulário
 app.get('/form',function (req,res) {
-    res.render('formulario.handlebars')
+    res.render('LivrosDaComunidade.handlebars')
 })
 //rotas "post" só pode ser acessada quando alguem faz uma requisição
 app.post('/add',function(req,res){
     Comunidade.create({
         titulo: req.body.titulo,
-        conteudo: req.body.conteudo 
+        descricao: req.body.descricao,
+        link: req.body.link
         }).then(function(){
             res.redirect('/')
     }).catch(function(erro){

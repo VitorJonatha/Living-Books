@@ -6,7 +6,7 @@ const Comunidade = db.sequelize.define('comunidade',{
         type: db.Sequelize.STRING
     },
     descricao:{
-        type: db.Sequelize.TEXT
+        type: db.Sequelize.STRING
     },
     link:{
         type: db.Sequelize.STRING
