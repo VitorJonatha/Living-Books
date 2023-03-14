@@ -26,29 +26,33 @@ body{
 }
 
 h1{
+    font-weight: 600;
     font-size: 37px;
     text-align: center;
     padding: 4.5%;
     font-family: 'Lora', serif;
 }
 h2{
+    font-weight: 570;
     font-size: 30px;
     margin: 5%;
     font-family: 'Lora', serif;
 }
 h3{
+    font-weight: 600;
     font-size: 25px;
     padding: 20px;
     font-family: 'Lora', serif;
 }
 p{
+    font-weight: 420;
     font-size:20px;
     padding: 15px;
 }
 .fundo{
     margin: 11%;
     align-items: center;
-    background-color: white;
+    background-color: rgb(243, 243, 253);
     border-style: outset;
     border-radius: 5px;
     border-color: #00c2cb;
@@ -56,7 +60,7 @@ p{
     width: 1250px;
 }
 .fundo img{
-    margin-left: 15px;
+    margin-left: 30px;
     height: 420px;
     width: 650px;
     box-shadow: 5px 3px 20px black;
