@@ -6,6 +6,11 @@ body{
     background-size: 1437px;
 }
 
+.container-fluid{
+    height: 60px;
+    display: inline-block;
+}
+
 .nav-link{
     color: white;
     font-size: 17px;

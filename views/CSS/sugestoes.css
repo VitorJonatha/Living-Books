@@ -1,8 +1,129 @@
+        /* Responsivo início */
+@media screen and (min-width: 800px) {
+    *{
+        margin: none;
 
-.nav-link{
-    color: white;
+    }
+    .body {
+      margin: none;
+      background-color: white;
+    }
+
 }
+
+
+
+        /* Responsivo fim */
 
 body{
     background-color: #19192a;
+
 }
+.container-fluid{
+    height: 60px;
+}
+.nav-link{
+    color: white;
+    font-size: 17px;
+    
+}
+
+h1{
+    font-size: 37px;
+    text-align: center;
+    padding: 4.5%;
+    font-family: 'Lora', serif;
+}
+h2{
+    font-size: 30px;
+    margin: 5%;
+    font-family: 'Lora', serif;
+}
+h3{
+    font-size: 25px;
+    padding: 20px;
+    font-family: 'Lora', serif;
+}
+p{
+    font-size:20px;
+    padding: 15px;
+}
+.fundo{
+    margin: 11%;
+    align-items: center;
+    background-color: white;
+    border-style: outset;
+    border-radius: 5px;
+    border-color: #00c2cb;
+    border-width: 5px;
+    width: 1250px;
+}
+.fundo img{
+    margin-left: 15px;
+    height: 420px;
+    width: 650px;
+    box-shadow: 5px 3px 20px black;
+    border-radius: 4px;
+}
+
+
+    /* Footer início */
+footer
+{
+    background-color: #0e0e1a;
+    width: 100%;
+}
+footer .cont-footer{
+    display: flex;
+    color: rgb(211, 205, 235);
+
+}
+/*Imagem no footer*/
+    footer .cont-footer img{
+    box-shadow: 5px 4px 2px rgb(7, 5, 15);
+}
+footer .cont-footer img:active{
+    box-shadow: none;
+}
+    /*Fim de imagem*/
+
+.link{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+.link a:hover{
+    color: rgb(101, 101, 161);
+}
+footer .cont-footer h3{
+    color: white;
+    font-size: 26px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+footer .cont-footer .redes-socias img{
+    margin-right: 10px;
+}
+footer .cont-footer ul > p{
+    margin-bottom: 40px;
+}
+footer .cont-footer p{
+    color: rgb(158, 224, 250);
+}
+footer .cont-footer a{
+    color: rgb(199, 236, 250);
+    text-decoration: none;
+}
+    
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(8, 4, 21);
+    color: rgb(199, 199, 199);
+    font-size:0.9rem;
+    padding: 0.5rem;
+    font-weight: 100;
+}
+    
+    /*Fim Footer */
