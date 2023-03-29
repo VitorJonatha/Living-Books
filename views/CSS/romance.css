@@ -6,11 +6,12 @@ h1{
     padding: 20px;
 }
 .card{
-    padding: 60px;
+    align-items: center;
+    padding: 55px;
     border: 30px;
     margin-left: 60px;
     margin-right: 60px;
-    height: 763px;
+    height: 750px;
     transition: 0.3s;
     border-radius: 15px;
     background-color: aliceblue;
