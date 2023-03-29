@@ -51,7 +51,8 @@ p{
     padding: 15px;
 }
 .fundo{
-    margin: 11%;
+    margin-top: 70px;
+    margin-left: 11%;
     align-items: center;
     background-color: rgb(243, 243, 253);
     border-style: outset;
