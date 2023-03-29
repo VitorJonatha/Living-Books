@@ -12,6 +12,7 @@
 
         /* Responsivo fim */
 
+        
 body{
     background-color: #19192a;
 
@@ -67,6 +68,35 @@ p{
     border-radius: 4px;
 }
 
+    /*Clima inicio*/
+    .clima{
+        margin-top: 40px;
+        background-color: rgba(137, 188, 251, 0.71);
+        height: 100%;
+        border: 2px;
+        border-style:solid;
+        border-width: 1px;
+        border-color: black;
+        border-radius: 20px;
+    }
+    .clima img{
+        box-shadow: none;
+        height: 90px;
+        width: 90px;
+        margin-top: 15px;
+    }
+    .clima h3{
+        text-align: center;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #19192a;
+        margin-top: -20px;
+    }
+    .clima p{
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color:#19192a;
+    }
+        /*Clima fim*/
 
     /* Footer início */
 footer
