@@ -28,11 +28,15 @@ h1{
 }
 
 h3{
+    margin-top: 15px;
     color: rgb(199, 201, 210);
     text-indent: 30px;
     font-family: 'Lora', serif;
     font-size: 25px;
 }
-.espaço{
-    height: 90px;
+.logo{
+    margin-top: 90px;
+}
+.frase{
+    margin-top: 60px;
 }
