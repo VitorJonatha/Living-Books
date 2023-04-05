@@ -75,21 +75,22 @@ button{
 footer
 {
     background-color: #0e0e1a;
+    width: 100%;
 }
-footer .container{
+footer .cont-footer{
     display: flex;
     color: rgb(211, 205, 235);
-    padding-top: 30px;
-    padding-right: 200px;
+
 }
 /*Imagem no footer*/
-footer .container img{
+    footer .cont-footer img{
     box-shadow: 5px 4px 2px rgb(7, 5, 15);
 }
-footer .container img:active{
+footer .cont-footer img:active{
     box-shadow: none;
 }
-/*Fim de "imagem no footer"*/
+    /*Fim de imagem*/
+
 .link{
     display: flex;
     flex-direction: column;
@@ -97,25 +98,28 @@ footer .container img:active{
     list-style: none;
 }
 .link a:hover{
-       color: rgb(101, 101, 161);
+    color: rgb(101, 101, 161);
 }
-footer .container h3{
+footer .cont-footer h3{
     color: white;
     font-size: 26px;
     margin-bottom: 16px;
     font-weight: 500;
 }
-footer .container .redes-socias img{
-margin-right: 10px;
+footer .cont-footer .redes-socias img{
+    margin-right: 10px;
 }
-footer .container ul > p{
+footer .cont-footer ul > p{
     margin-bottom: 40px;
 }
-footer .container a{
-    color: rgb(211, 205, 235);
+footer .cont-footer p{
+    color: rgb(158, 224, 250);
+}
+footer .cont-footer a{
+    color: rgb(199, 236, 250);
     text-decoration: none;
 }
-
+    
 #footer_copyright{
     display: flex;
     justify-content: center;
@@ -125,5 +129,5 @@ footer .container a{
     padding: 0.5rem;
     font-weight: 100;
 }
-
-    /* Footer fim */
+    
+    /*Fim Footer */

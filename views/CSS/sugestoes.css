@@ -1,9 +1,4 @@
-        /* Responsivo início */
-/* @media screen and (min-width: 360px)
 
-        /* Responsivo fim */
-
-        
 body{
     background-color: #19192a;
 }
@@ -97,7 +92,6 @@ p{
         text-align: center;
 
     }
-
     .form-input-container{
         display: flex;        
         width: 30%;
@@ -129,62 +123,62 @@ p{
         /*Clima fim*/
 
     /* Footer início */
-footer
-{
-    background-color: #0e0e1a;
-    width: 100%;
-}
-footer .cont-footer{
-    display: flex;
-    color: rgb(211, 205, 235);
-
-}
-/*Imagem no footer*/
-    footer .cont-footer img{
-    box-shadow: 5px 4px 2px rgb(7, 5, 15);
-}
-footer .cont-footer img:active{
-    box-shadow: none;
-}
-    /*Fim de imagem*/
-
-.link{
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    list-style: none;
-}
-.link a:hover{
-    color: rgb(101, 101, 161);
-}
-footer .cont-footer h3{
-    color: white;
-    font-size: 26px;
-    margin-bottom: 16px;
-    font-weight: 500;
-}
-footer .cont-footer .redes-socias img{
-    margin-right: 10px;
-}
-footer .cont-footer ul > p{
-    margin-bottom: 40px;
-}
-footer .cont-footer p{
-    color: rgb(158, 224, 250);
-}
-footer .cont-footer a{
-    color: rgb(199, 236, 250);
-    text-decoration: none;
-}
+    footer
+    {
+        background-color: #0e0e1a;
+        width: 100%;
+    }
+    footer .cont-footer{
+        display: flex;
+        color: rgb(211, 205, 235);
     
-#footer_copyright{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(8, 4, 21);
-    color: rgb(199, 199, 199);
-    font-size:0.9rem;
-    padding: 0.5rem;
-    font-weight: 100;
-}
+    }
+    /*Imagem no footer*/
+        footer .cont-footer img{
+        box-shadow: 5px 4px 2px rgb(7, 5, 15);
+    }
+    footer .cont-footer img:active{
+        box-shadow: none;
+    }
+        /*Fim de imagem*/
     
-    /*Fim Footer */
+    .link{
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        list-style: none;
+    }
+    .link a:hover{
+        color: rgb(101, 101, 161);
+    }
+    footer .cont-footer h3{
+        color: white;
+        font-size: 26px;
+        margin-bottom: 16px;
+        font-weight: 500;
+    }
+    footer .cont-footer .redes-socias img{
+        margin-right: 10px;
+    }
+    footer .cont-footer ul > p{
+        margin-bottom: 40px;
+    }
+    footer .cont-footer p{
+        color: rgb(158, 224, 250);
+    }
+    footer .cont-footer a{
+        color: rgb(199, 236, 250);
+        text-decoration: none;
+    }
+        
+    #footer_copyright{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(8, 4, 21);
+        color: rgb(199, 199, 199);
+        font-size:0.9rem;
+        padding: 0.5rem;
+        font-weight: 100;
+    }
+        
+        /*Fim Footer */
