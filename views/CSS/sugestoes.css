@@ -59,15 +59,17 @@ p{
 
     /*Clima inicio*/
     .clima{
+        justify-content: center;
         align-items: center;
+        text-align: center;
         margin-top: 40px;
-        background-color: rgba(137, 188, 251, 0.71);
+        background: linear-gradient(0deg, rgba(87,165,208,1) 0%, rgba(101,89,230,1) 100%); 
         height: 100%;
         border: 2px;
         border-style:solid;
         border-width: 1px;
         border-color: rgb(9, 4, 35);
-        border-radius: 20px;
+        border-radius: 10px;
     }
     .clima img{
         box-shadow: none;
@@ -76,45 +78,50 @@ p{
         margin-top: 15px;
     }
     .clima h3{
+        font-size: 29px;
         text-align: center;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         color: #0e0e2c;
-        margin-top: -20px;
+        margin-top: -70px;
     }
-    .clima p{
-        text-align: center;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color:#19192a;
-    }
-    .clima input{
-        border-radius: 6px;
-    }
-    .pesq{
+
+    .form{
         align-items: center;
+        justify-content: center;
     }
-    .clima button{
-        margin-left: 38%;
-        appearance: none;
-        background: linear-gradient(0deg, rgb(126, 130, 235) 0%, rgb(116, 78, 206) 50%,rgb(97, 59, 203)) 100%;
-        border: 1px solid rgba(27, 31, 35, .15);
-        border-radius: 6px;
-        box-sizing: border-box;
-        color: rgb(10, 5, 34);
-        cursor: pointer;
-        display: inline-block;
-        font-size: 20px;
-        width: 275px;
-        font-weight: 600;
-        line-height: 20px;
-        padding: 6px 16px;
-        position: relative;
+    .form h3{
+        margin-bottom: 1rem;
         text-align: center;
-        box-shadow: rgba(20, 70, 32, 0.13) 0 1px 0 inset;
-        box-shadow: 3px 3px 5px #0b081f;
+
     }
-    .clima button:active{
-        background-color: #574e95;
-        box-shadow: none;
+
+    .form-input-container{
+        display: flex;        
+        width: 30%;
+        align-items: center;
+        margin-left: 35%;
+    }
+
+    .form input{
+        padding: 10px;
+        border: none;
+        flex: 1;
+        border-radius: 4px;
+    }    
+
+    .form button{
+        padding: 0.8rem;
+        min-width: 50px;
+        margin-left: 8px;
+        background-color: #8dd0f5;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .coisinhas p{
+        font-size: 23px;
+        margin-top: -40px;
     }
         /*Clima fim*/
 
